@@ -11,16 +11,16 @@ play = [
 open = [
 	{ run = 'xdg-open "$@"', desc = "Open" },
 ]
-
-[open]
-prepend_rules = [
-	{ name = "*.json", use = "edit" },
+#
+#[open]
+#prepend_rules = [
+#	{ name = "*.json", use = "edit" },
 
 	# Multiple openers for a single rule
-	{ name = "*.html", use = [ "open", "edit" ] },
+#	{ name = "*.html", use = [ "open", "edit" ] },
 
-	{ name = "*", use = ["open", "edit" ] },
-]
-append_rules = [
-	{ name = "*", use = "edit" },
-]
+#	{ name = "*", use = ["open", "edit" ] },
+#]
+#append_rules = [
+#	{ name = "*", use = "edit" },
+#]
